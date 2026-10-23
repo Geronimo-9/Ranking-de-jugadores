@@ -7,7 +7,9 @@ public class Jugadores {
 
 
 
+public Jugadores(){
 
+}
 
 public Jugadores(String nombre, int puntaje){
     this.nombre = nombre;
@@ -24,12 +26,14 @@ public Jugadores(String nombre, int puntaje){
     }
 
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+
+    @Override
+    public String toString() {
+        return "Jugador{" +
+                "nombre='" + nombre + '\'' +
+                ", puntaje=" + puntaje +
+                '}';
     }
 
-    public void setPuntaje(int puntaje) {
-        this.puntaje = puntaje;
-    }
 
 }
